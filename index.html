@@ -10,6 +10,8 @@
     <script src="public/js/videocontrols.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
     <script src="public/js/videosphereexpand.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/super-hands@^3.0.1/dist/super-hands.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
   
   </head>
@@ -18,7 +20,10 @@
     
      <a-scene>
        
-      <a-gltf-model src="#boxdigital" animation="property: rotation; to: 360 360 0; dur: 90000; easing: linear; loop: true" position="0 2 -6" scale="0.01 0.01 0.01" animation-mixer></a-gltf-model>
+      <a-gltf-model src="#boxdigital" animation="property:rotation ; to: 360 360 0; dur: 90000; easing: linear; loop: true" position="0 2 -6" scale="0.01 0.01 0.01" animation-mixer
+                    event-set__down="_event: mousedown; drag: true"
+             event-set__up="_event: mouseup; material.wireframe: false"
+             event-set__leave="_event: mouseleave; material.wireframe: false"></a-gltf-model>
               
        
      
