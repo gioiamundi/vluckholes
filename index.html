@@ -8,6 +8,7 @@
     <script src="public/js/examplefunctions.js"></script>
     <script src="public/js/audiocontrols.js"></script>
     <script src="public/js/videocontrols.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
     <script src="public/js/videosphereexpand.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
   
@@ -17,8 +18,10 @@
     
      <a-scene>
        
-      <a-gltf-model src="#boxdigital" animation="property: rotation; to: 360 360 0; dur: 90000; easing: linear; loop: true" position="0 2 -6" scale="0.01 0.01 0.01" material= "side:double" animation-mixer></a-gltf-model>
-        cursor="rayOrigin: mouse"
+      <a-gltf-model event-set__down="_event: mousedown; material.wireframe: true"
+             event-set__up="_event: mouseup; material.wireframe: false"
+             event-set__leave="_event: mouseleave; material.wireframe: false" src="#boxdigital" cursor="rayOrigin: mouse" animation="property: rotation; to: 360 360 0; dur: 90000; easing: linear; loop: true" position="0 2 -6" scale="0.01 0.01 0.01" material= "side:double" animation-mixer></a-gltf-model>
+        
        
      
        
