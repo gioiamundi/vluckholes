@@ -18,10 +18,8 @@
     
      <a-scene>
        
-      <a-gltf-model event-set__down="_event: mousedown; material.wireframe: true"
-             event-set__up="_event: mouseup; material.wireframe: false"
-             event-set__leave="_event: mouseleave; material.wireframe: false" src="#boxdigital" cursor="rayOrigin: mouse" animation="property: rotation; to: 360 360 0; dur: 90000; easing: linear; loop: true" position="0 2 -6" scale="0.01 0.01 0.01" material= "side:double" animation-mixer></a-gltf-model>
-        
+      <a-gltf-model src="#boxdigital" animation="property: rotation; to: 360 360 0; dur: 90000; easing: linear; loop: true" position="0 2 -6" scale="0.01 0.01 0.01" animation-mixer></a-gltf-model>
+              
        
      
        
@@ -44,7 +42,7 @@
         
        </a-assets>
              
-      <a-entity id="camera" position="0 1.6 0" camera look-controls wasd-controls>
+      <a-entity id="camera" position="0 0 0" camera look-controls wasd-controls>
         <a-entity cursor="rayOrigin: mouse"></a-entity>
       </a-entity>
       
