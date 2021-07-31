@@ -17,7 +17,7 @@
   <body>
     
      <a-scene>
-       <a-entity light="type: ambient; color:#eaccb8; intensity: 2.7" ></a-entity>
+       <a-entity light="type: hemisphere; color:#eaccb8; intensity: 2.3" ></a-entity>
    
             
              
@@ -62,12 +62,7 @@
          <a-entity id="architecture" class="homeworld">
          
          <a-plane position="0 5 -15" width="30" height="10" repeat="2 1" material= "transparent: true; opacity: 0.5"; src= "#videowall"></a-plane>
-         <a-plane position="-2.5 5 15" rotation="0 180 0" width="25" height="10" src="#wall" repeat="2 1"></a-plane>
-         <a-plane position="-15 5 0" rotation="0 90 0" width="30" height="10" src="#wall" repeat="2 1"></a-plane>
-         <a-plane position="15 5 0" rotation="0 -90 0" width="30" height="10" src="#wall" repeat="2 1"></a-plane>
-         <a-plane id = "ceiling" position="0 10 0" scale="1 1 1" width="30" height="30" rotation="90 0 0"
-           material="metalness:1; roughness:0; transparent: true; opacity: .7; shader: standard; 
-           color: #faaf52; side:double;"   ></a-plane>
+                
        </a-entity>
 
        
