@@ -19,14 +19,6 @@
      <a-scene>
        <a-entity light="type: hemisphere; color:#eaccb8; intensity: 2.3" ></a-entity>
    
-            
-             
-          <a-gltf-model src="#tokyomodel" animation="property:rotation ; to: 0 360 0; dur: 90000; easing: linear; loop: true" position="0 -2 -6" scale="0.01 0.01 0.01" animation-mixer
-                    event-set__down="_event: mousedown; drag: true"></a-gltf-model>
-            
-        
-              
-        
        
              
        <a-assets>
@@ -61,7 +53,8 @@
       <a-sky id="sky" src="#infinitociudad"></a-sky>
        
          <a-entity id="architecture" class="homeworld">
-         
+          <a-gltf-model src="#tokyomodel" animation="property:rotation ; to: 0 360 0; dur: 90000; easing: linear; loop: true" position="0 -1 -6" scale="0.01 0.01 0.01" animation-mixer
+                    event-set__down="_event: mousedown; drag: true"></a-gltf-model>
          <a-plane position="0 5 -15" width="30" height="10" repeat="2 1" material= "transparent: true; opacity: 0.5"; src= "#videowall"></a-plane>
                 
        </a-entity>
@@ -154,7 +147,7 @@
          
       </a-video>
        
-       <a-circle id="homebutton" position="0 .1 0" rotation="-90 0 0" backhome></a-circle>
+    <a-circle id="homebutton" position="0 .1 0" rotation="-90 0 0" backhome></a-circle>
       
      </a-scene>
     

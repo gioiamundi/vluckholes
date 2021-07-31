@@ -9,7 +9,7 @@
 
       
       let gobackhome = () => {
-      sky.setAttribute("src", "#starsky");
+      sky.setAttribute("src", "#infinitociudad");
       videosphere.setAttribute("radius", ".7");
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", true)})
