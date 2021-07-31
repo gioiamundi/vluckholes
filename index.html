@@ -21,7 +21,7 @@
    
             
              
-          <a-gltf-model src="#boxdigital" animation="property:rotation ; to: 0 360 0; dur: 90000; easing: linear; loop: true" position="0 1 -6" scale="0.01 0.01 0.01" animation-mixer
+          <a-gltf-model src="#tokyomodel" animation="property:rotation ; to: 0 360 0; dur: 90000; easing: linear; loop: true" position="0 -2 -6" scale="0.01 0.01 0.01" animation-mixer
                     event-set__down="_event: mousedown; drag: true"></a-gltf-model>
             
         
@@ -33,6 +33,7 @@
          <img id="woodfloor" src="https://cdn.glitch.com/c388f728-37b7-4af9-af03-1ee7430663e7%2F4727356277_66fb5f938f_o.jpg?1544178281422">
          <img id="wall" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2F4340689010_68c3b1bbb7_o%20(2).jpg?1547154870021">
          <img id="starsky" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Fstarry%20night.jpg?1547158907338">
+         <img id="infinitociudad" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLovepik_com-500376974-the-city-night-view-high-building-in-shanghai.jpg?v=1627765323381">
          <img id="picasso" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FPablo_Picasso_-_Womanwith_a_Mandolin_-_Ermitage%20(1).jpg?1547166417213">
          <img id="bordeauxtheater" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FOp%C3%A9ra_National_de_Bordeaux%20(1).jpg?1547235572572">
          <img id="grafitty" src= "https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FWords.jpg?v=1626474185266">
@@ -40,10 +41,10 @@
          response-type="arraybuffer"></a-asset-item>
          <audio id="song" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fy2mate.com%20-%20R%C3%B6yksopp%20%20What%20Else%20Is%20There%20ARTBAT%20Remix.mp3?v=1626463610284" preload="auto" crossorigin="anonymous"></audio>
          <video id="videoclip" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fsintel.mp4?v=1626463581397" crossorigin="anonymous"></video>
-         <video id="videocity" autoplay loop="true" src="?" crossorigin="anonymous"></video>
+         <video id="videocity" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLovepik_com-500376974-the-city-night-view-high-building-in-shanghai.jpg?v=1627765323381" crossorigin="anonymous"></video>
          <video id="spherevidclip" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2F360_VR%20Master%20Series%20_%20Free%20Download%20_%20%20Pebbly%20Beach%20Headland.mp4?v=1626538832866" crossorigin="anonymous"> </video>
          <video id="videowall" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fistockphoto-1250940787-640_adpp_is.mp4?v=1626475860388" crossorigin="anonymous"> </video>
-         <a-asset-item id="boxdigital" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450"
+         <a-asset-item id="tokyomodel" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450"
          response-type="arraybuffer"></a-asset-item>
         
        </a-assets>
@@ -52,13 +53,12 @@
         <a-entity cursor="rayOrigin: mouse"></a-entity>
       </a-entity>
       
-      <a-entity laser-controls="hand:right"></a-entity>
-       
+      <a-entity laser-controls="hand:right"></a-entity> 
     
  
     
 
-      <a-sky id="sky" src="#videocity"></a-sky>
+      <a-sky id="sky" src="#infinitociudad"></a-sky>
        
          <a-entity id="architecture" class="homeworld">
          
