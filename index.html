@@ -53,8 +53,7 @@
       <a-sky id="sky" src="#infinitociudad"></a-sky>
        
          <a-entity id="architecture" class="homeworld">
-          <a-gltf-model src="#tokyomodel" animation="property:rotation ; to: 0 360 0; dur: 90000; easing: linear; loop: true" position="0 -1 -6" scale="0.01 0.01 0.01" animation-mixer
-                    event-set__down="_event: mousedown; drag: true"></a-gltf-model>
+          <a-gltf-model src="#tokyomodel" animation="property:rotation ; to: 0 360 0; dur: 90000; easing: linear; loop: true" position="0 -1 -6" scale="0.01 0.01 0.01" animation-mixer></a-gltf-model>
          <a-plane position="0 5 -15" width="30" height="10" repeat="2 1" material= "transparent: true; opacity: 0.5"; src= "#videowall"></a-plane>
                 
        </a-entity>
@@ -84,7 +83,7 @@
        
       <a-entity id="photospheredisplay" class="homeworld" position="-10 0 -12">
           <a-box color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
-          <a-sphere position="0 1.8 0" radius=".7" src="#bordeauxtheater" sphereexpand         
+          <a-sphere position="0 1.8 0" radius="3" src="#bordeauxtheater" sphereexpand         
           animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
           ></a-sphere>
           <a-plane id="photospherecaption" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
@@ -149,7 +148,7 @@
          
       </a-video>
        
-       <a-circle id="homebutton" position="0 0 0" rotation="0 0 0" backhome></a-circle>
+       <a-circle id="homebutton" position="0.3 0.7 -4" rotation="0 0 0" backhome></a-circle>
           
      </a-scene>
     
