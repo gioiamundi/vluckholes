@@ -48,7 +48,7 @@
       <a-entity laser-controls="hand:right"></a-entity> 
        
      
-  <a-gltf-model src="#tokyomodel" animation="property:rotation;to:0 360 0;dur:90000;easing:linear;loop:NaN" position="3.14301 1.55914 -32.44733" scale="0.055 0.055 0.055" animation-mixer="" gltf-model="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450" rotation="0.0159980125106744 112.69111605191864 0"></a-gltf-model>
+ <a-gltf-model src="#tokyomodel" animation="property:rotation;to:0 360 0;dur:90000;easing:linear;loop:NaN" position="3.14301 1.55914 -32.44733" scale="0.08 0.08 0.08" animation-mixer="" gltf-model="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450" rotation="0.01228264381422366 170.12598086164346 0"></a-gltf-model>
 <a-gltf-model src="#tokyomodel" animation="property:rotation;to:0 360 0;dur:90000;easing:linear;loop:NaN" position="-140.34664 -107.66022 56.226" scale="0.4 0.4 0.4" animation-mixer="" gltf-model="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450" rotation="0 192.94785364951747 0"></a-gltf-model>
         
     
@@ -124,19 +124,20 @@
             position=".4 0 .06" shader="flat" width=".5" height="1"></a-plane>
          </a-plane>
       
-      </a-entity>   <a-sphere src="#videoclip" class="homeworld" transparent="true" opacity="0.2" position="-5 3.90363 3.35617" rotation="0.66 95.25 -0.45" scale="1.07 1 1" material="" geometry="" visible="">
+      </a-entity>   <a-sphere src="#videoclip" class="homeworld" transparent="true" opacity="0.2" position="-5 3.90363 3.8805" rotation="0.46 95.69 -0.64" scale="1.5 1.5 1.5" material="" geometry="" visible="">
          
-           <a-sphere id="vidplaybox" depth=".01" scale="0.15 0.15 0.15" position="-0.35 -1.5 0.06" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.2" videoplayer="" geometry="">
+           <a-sphere id="vidplaybox" depth=".01" scale="0.15 0.15 0.15" position="-0.41451 -1.01082 0.64869" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.2" videoplayer="" geometry="">
             <a-triangle id="vidplayicon" color="violet" depth=".01" scale="" rotation="0 0 -90" position="0.1 -0.02 0.06" shader="flat" width="2" height="2" vertex-a="0 .3 0" material="" geometry="">
             </a-triangle>
 
          </a-sphere> 
 
-         <a-plane id="vidpausebox" scale="0.1 0.15 0.1" position="0.35 -1.5 0.06" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.4" videopause="" geometry="">
+         <a-plane id="vidpausebox" scale="0.16 0.15 0.1" position="0.43883 -0.94298 -0.89847" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.4" videopause="" geometry="" rotation="0 -0.16 0">
             <a-plane id="vidpauseiconleft" color="violet" depth=".1" scale="" position="-0.4 0 0.06" shader="flat" width=".5" height="1" material="" geometry=""></a-plane>
             <a-plane id="vidpauseiconright" color="violet" depth=".1" scale="" position="0.4 0 0.06" shader="flat" width=".5" height="1" material="" geometry=""></a-plane>
          </a-plane>
          
+      
       </a-sphere>
        
           
