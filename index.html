@@ -27,7 +27,7 @@
          <img id="starsky" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2Fstarry%20night.jpg?1547158907338">
          <img id="infinitociudad" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLovepik_com-500376974-the-city-night-view-high-building-in-shanghai.jpg?v=1627765323381">
          <img id="picasso" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FPablo_Picasso_-_Womanwith_a_Mandolin_-_Ermitage%20(1).jpg?1547166417213">
-         <img id="bordeauxtheater" src="https://cdn.glitch.com/f2ee9d74-9726-4bed-9c30-2d49d6391dee%2FOp%C3%A9ra_National_de_Bordeaux%20(1).jpg?1547235572572">
+         <img id="beach" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fkris-guico-rsB-he-ye7w-unsplash.jpg?v=1627939350700">
          <img id="grafitty" src= "https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FWords.jpg?v=1626474185266">
          <a-asset-item id="skullmodel" src=""
          response-type="arraybuffer"></a-asset-item>
@@ -48,8 +48,8 @@
       <a-entity laser-controls="hand:right"></a-entity> 
        
      
- <a-gltf-model src="#tokyomodel" animation="property:rotation;to:0 360 0;dur:90000;easing:linear;loop:NaN" position="3.14301 1.55914 -32.44733" scale="0.08 0.08 0.08" animation-mixer="" gltf-model="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450" rotation="0.01228264381422366 170.12598086164346 0"></a-gltf-model>
-<a-gltf-model src="#tokyomodel" animation="property:rotation;to:0 360 0;dur:90000;easing:linear;loop:NaN" position="-140.34664 -107.66022 56.226" scale="0.4 0.4 0.4" animation-mixer="" gltf-model="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450" rotation="0 192.94785364951747 0"></a-gltf-model>
+ <a-gltf-model class="homeworld" src="#tokyomodel" animation="property:rotation;to:0 360 0;dur:90000;easing:linear;loop:NaN" position="3.14301 1.55914 -32.44733" scale="0.08 0.08 0.08" animation-mixer="" gltf-model="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450" rotation="0.01228264381422366 170.12598086164346 0"></a-gltf-model>
+<a-gltf-model class="homeworld" src="#tokyomodel" animation="property:rotation;to:0 360 0;dur:90000;easing:linear;loop:NaN" position="-140.34664 -107.66022 56.226" scale="0.4 0.4 0.4" animation-mixer="" gltf-model="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450" rotation="0 192.94785364951747 0"></a-gltf-model>
         
     
 
@@ -77,14 +77,16 @@
          ></a-plane>
        </a-entity>
        
-           <a-entity id="photospheredisplay" class="homeworld" position="-10 0 -12">
+        <a-entity id="photospheredisplay" class="homeworld" position="-10 0 -12">
           <a-box color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
-          <a-sphere position="0 1.8 0" radius=".7" src="#bordeauxtheater" sphereexpand         
+          <a-sphere position="0 1.8 0" radius=".7" src="#beach" sphereexpand         
           animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
           ></a-sphere>
+          <a-gltf-model class="homeworld" src="#tokyomodel" animation="property:rotation;to:0 360 0;dur:90000;easing:linear;loop:NaN" position="3.14301 1.55914 -32.44733" scale="0.08 0.08 0.08" animation-mixer="" gltf-model="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450" rotation="0.01228264381422366 170.12598086164346 0"></a-gltf-model>
           <a-plane id="photospherecaption" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
           text="value: This photosphere from France was taken by Michael Buze; width: 2; wrapCount: 30; align: center"
           ></a-plane>
+          
        </a-entity>
 
        

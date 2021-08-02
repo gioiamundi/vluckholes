@@ -6,7 +6,7 @@
       let sky = document.querySelector("#sky");
 
       let sphereloader = () => {
-      sky.setAttribute("src", "#bordeauxtheater");
+      sky.setAttribute("src", "#beach");
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", false)})
       }
