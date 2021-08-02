@@ -3,19 +3,18 @@
    init: function () {
 
       let homeworldelements = document.querySelectorAll(".homeworld");
+      let sphereexpandelements= document.querySelectorAll(".sphereexpand");
       let sky = document.querySelector("#sky");
-      let modelisla = document.querySelector("#islaflotante");
+      
 
       let sphereloader = () => {
-      sky.setAttribute("src", "#beach");
-      modelisla.setAttribute("src", "#islaflotante")
+      sky.setAttribute("src", "#islaflotante");
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", false)})
+      sphereexpandelements.forEach((sphereexpandelements) => {
+      sphereexpandelements.setAttribute("visible", false)})  
       }
 
       this.el.addEventListener('click', sphereloader);
         
    }});
-  
-  
-
