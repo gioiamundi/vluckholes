@@ -8,11 +8,10 @@
       
 
       let sphereloader = () => {
-      sky.setAttribute("src", "#islaflotante");
+      sky.setAttribute("src", "#beach");
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", false)})
-      sphereexpandelements.forEach((sphereexpandelements) => {
-      sphereexpandelements.setAttribute("visible", false)})  
+      
       }
 
       this.el.addEventListener('click', sphereloader);
