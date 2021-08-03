@@ -90,12 +90,10 @@
        </a-entity>
        
        <a-entity id="videospheredisplay" position="-7 0 -12">
-          <a-box class="homeworld" color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
+
           <a-videosphere id="videosphereentity" position="0 1.8 0" radius=".7" src="#spherevidclip" videosphereexpand      
           ></a-videosphere>
-          <a-plane id="videospherecaption" class="homeworld" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
-          text="value: This is a short, equirectangular videosphere; width: 2; wrapCount: 30; align: center"
-          ></a-plane>
+         
        </a-entity>
        
        <a-entity id="musicpanel" class="homeworld" position="-14.9 3 -6" rotation="0 90 0" sound= "src: #song">
@@ -125,7 +123,9 @@
             position=".4 0 .06" shader="flat" width=".5" height="1"></a-plane>
          </a-plane>
       
-      </a-entity>   <a-sphere src="#videoclip" class="homeworld" transparent="true" opacity="0.2" position="-5 3.90363 3.8805" rotation="0.46 95.69 -0.64" scale="1.5 1.5 1.5" material="" geometry="" visible="">
+      </a-entity>  
+       
+       <a-sphere src="#videoclip" class="homeworld" transparent="true" opacity="0.2" position="-5 3.90363 3.8805" rotation="0.46 95.69 -0.64" scale="1.5 1.5 1.5" material="" geometry="" visible="">
          
           <a-sphere id="vidplaybox" depth=".01" scale="0.15 0.15 0.15" position="-0.41451 -1.01045 0.64868" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.2" videoplayer="" geometry="">
             <a-triangle id="vidplayicon" color="violet" depth=".01" scale="" rotation="0 0 -90" position="0.1 -0.02 0.06" shader="flat" width="2" height="2" vertex-a="0 .3 0" material="" geometry="">
