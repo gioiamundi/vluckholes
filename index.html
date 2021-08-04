@@ -69,78 +69,26 @@
        </a-entity>
        
        
-       <a-entity id="skulldisplay" class="homeworld" position="11 0 -11">
-         <a-box  color="black" width=".5" height="2" depth="1"></a-box>
-         <a-gltf-model position="0 1.8 0" rotation="0 0 -10" src="#skullmodel" scale=".5 .5 .5"
-         animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
-         ></a-gltf-model>
-         <a-plane id="skullcaption" position="3.9 1 2" rotation="0 -90 0" height=".6" width="auto" color="#191817"
-          text="value: This 3D model of a Triceratops skull was made by Sketchfab artist MikeBG; width: 3; align: center"
-         ></a-plane>
-       </a-entity>
-       
-        <a-entity id="photospheredisplay" class="homeworld" position="-10 0 -12">
-          <a-box color="black" rotation="0 35 0" width="1" height="2" depth=".5" ></a-box>
+             
+        <a-entity id="photospheredisplay" position="0 1.8 0">
+         
           <a-sphere position="0 1.8 0" radius=".7" src="#islaflotante" sphereexpand         
           animation="property: rotation; to: 0 360 0; easing: easeInOutSine; dur: 30000; loop: true; elasticity: 0"
           ></a-sphere>
-          <a-plane id="photospherecaption" position=".5 .5 .5" rotation="-25 35 0" height=".6" width="auto" color="#191817"
-          text="value: This photosphere from France was taken by Michael Buze; width: 2; wrapCount: 30; align: center"
-          ></a-plane>
-  
+           
         </a-entity>
-       
-        
-          <a-videosphere id="videosphereentity" position="0 1.8 0" radius=".7" src="#spherevidclip" videosphereexpand      
-          ></a-videosphere>
-         
-       </a-entity>
-
-
-   
-   
-         
-               
-       </a-entity>
-       
-       <a-entity id="musicpanel" class="homeworld" position="-14.9 3 -6" rotation="0 90 0" sound= "src: #song">
-          <a-plane width="2.5" height="3.5" position="0 -.06 0" shader="flat" src="#grafitty" side="double"  ></a-plane>
-          <a-plane position="0 -.5 .01" width="2" height=".5" transparent="true" opacity=".9" color="#191817"        
-                   text="value: Artist - Gabriel Baker \n Song - Left and Leaving; width: 4; align:center"></a-plane>
-          
-          <a-plane id="playbox"  depth=".01" scale=".3 .3 .3" position="-.673 -1.22 .01" shader="flat" width="2" height="2"
-          material="color:#191817; shader: flat" transparent="true" opacity=".9" songplayer>
-             <a-triangle id="playicon" color="white" depth=".01" scale="1 1 1" rotation="0 0 -90" 
-             position=".1 -.02 .06" shader="flat" width="2" height="2" vertex-a="0 .3 0" >
-            </a-triangle>
-         </a-plane> 
-          
-         <a-plane id="stopbox"  scale=".3 .3 .3" position="0 -1.22 .01" shader="flat" width="2" height="2"
-         material="color:#191817; shader: flat" transparent="true" opacity=".9" songstopper>
-             <a-plane id="stopicon" color="white" scale="1 1 1" position="0 0 .06" 
-              shader="flat" width="1" height="1" >
-            </a-plane>
-         </a-plane>
-
-         <a-plane id="pausebox" scale=".3 .3 .3" position=".673 -1.22 .01" shader="flat" width="2" height="2"
-         material="color:#191817; shader: flat" transparent="true" opacity=".9" songpauser>
-            <a-plane id="pauseiconleft" color="white" depth=".1" scale="1 1 1" 
-            position="-.4 0 .06" shader="flat" width=".5" height="1"  ></a-plane>
-            <a-plane id="pauseiconright" color="white" depth=".1" scale="1 1 1" 
-            position=".4 0 .06" shader="flat" width=".5" height="1"></a-plane>
-         </a-plane>
       
-      </a-entity>  
-       
+        
        <a-sphere src="#videoclip" class="homeworld" transparent="true" opacity="0.2" position="-5 3.90363 3.8805" rotation="0.46 95.69 -0.64" scale="1.5 1.5 1.5" material="" geometry="" visible="">
          
-          <a-sphere id="vidplaybox" depth=".01" scale="0.15 0.15 0.15" position="-0.41451 -1.01045 0.64868" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.2" videoplayer="" geometry="">
+         <a-sphere id="vidplaybox" depth=".01" scale="0.15 0.15 0.15" position="-0.41451 -1.01045 0.64868" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.2" videoplayer="" geometry="">
             <a-triangle id="vidplayicon" color="violet" depth=".01" scale="" rotation="0 0 -90" position="0.1 -0.02 0.06" shader="flat" width="2" height="2" vertex-a="0 .3 0" material="" geometry="">
             </a-triangle>
+           
+           </a-sphere>
 
-         </a-sphere>
-
-         <a-plane id="vidpausebox" scale="0.16 0.15 0.1" position="1.03561 -0.90903 0.06649" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.3" videopause="" geometry="" rotation="0 -0.16 0">
+       
+            <a-plane id="vidpausebox" scale="0.16 0.15 0.1" position="1.03561 -0.90903 0.06649" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.3" videopause="" geometry="" rotation="0 -0.16 0">
             <a-plane id="vidpauseiconleft" color="violet" depth=".1" scale="" position="-0.4 0 0.06" shader="flat" width=".5" height="1" material="" geometry=""></a-plane>
             <a-plane id="vidpauseiconright" color="violet" depth=".1" scale="" position="0.4 0 0.06" shader="flat" width=".5" height="1" material="" geometry=""></a-plane>
          </a-plane>
@@ -148,7 +96,7 @@
       
       </a-sphere>
        
-        <a-circle id="homebutton" color= "white" position="-36.48278 52.93519 29.7526" rotation="35 119.99999999999999 29.999999999999996" backhome="" material="alphaTest:0.66" geometry="primitive:torusKnot;radiusTubular:0.7;radius:4.33;segmentsTubular:58" scale="0.51 0.4 0.17" width: 4; align:center"></a-circle>  
+    <a-circle id="homebutton" color= "white" position="-36.48278 52.93519 29.7526" rotation="35 119.99999999999999 29.999999999999996" backhome="" material="alphaTest:0.66" geometry="primitive:torusKnot;radiusTubular:0.7;radius:4.33;segmentsTubular:58" scale="0.51 0.4 0.17" width: 4; align:"center"></a-circle>  
        
           
      </a-scene>
