@@ -8,7 +8,7 @@ AFRAME.registerComponent('backhome', {
      
       
       let gobackhome = () => {
-      sky.setAttribute("src", "#beach");
+      sky.setAttribute("src", "#infinitociudad");
       videosphere.setAttribute("radius", ".7");
       homeworldelements.forEach((homeworldelement) => {
       homeworldelement.setAttribute("visible", true)})
