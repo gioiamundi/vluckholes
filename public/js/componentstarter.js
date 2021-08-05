@@ -1,4 +1,4 @@
-AFRAME.registerComponent('disappear', {       
+AFRAME.registerComponent('disapear', {       
   
   init: function () {      
   
