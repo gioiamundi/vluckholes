@@ -1,5 +1,4 @@
-AFRAME.registerComponent('backhome', {
- 
+AFRAME.registerComponent('backhome', { 
     
    init: function () {
      
