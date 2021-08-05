@@ -32,7 +32,7 @@
          <a-asset-item id="skullmodel" src=""
          response-type="arraybuffer"></a-asset-item>
          <audio id="song" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fy2mate.com%20-%20R%C3%B6yksopp%20%20What%20Else%20Is%20There%20ARTBAT%20Remix.mp3?v=1626463610284" preload="auto" crossorigin="anonymous"></audio>
-         <video id="videoclip" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fselector1.mp4?v=1628119524463" crossorigin="anonymous"></video>
+         <video id="videoclip" autoplay loop="true" src="" crossorigin="anonymous"></video>
          <video id="videocity" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLovepik_com-500376974-the-city-night-view-high-building-in-shanghai.jpg?v=1627765323381" crossorigin="anonymous"></video>
          <video id="spherevidclip" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2F360_VR%20Master%20Series%20_%20Free%20Download%20_%20%20Pebbly%20Beach%20Headland.mp4?v=1626538832866" crossorigin="anonymous"> </video>
          <video id="videowall" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fistockphoto-1250940787-640_adpp_is.mp4?v=1626475860388" crossorigin="anonymous"> </video>
@@ -70,13 +70,13 @@
         </a-entity>
       
         
-       <a-sphere src="#videoclip" transparent="true" opacity="0.2" position="-5 3.90363 3.8805" rotation="0.46 95.69 -0.64" scale="1.5 1.5 1.5" material="" geometry="" visible="">
+       <a-circle src="#videoclip" transparent="true" opacity="0.2" position="-5 3.90363 3.8805" rotation="0.46 95.69 -0.64" scale="1.5 1.5 1.5" material="" geometry="" visible="">
          
-         <a-sphere id="vidplaybox" depth=".01" scale="0.15 0.15 0.15" position="-0.41451 -1.01045 0.64868" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.2" videoplayer="" geometry="">
+         <a-circle id="vidplaybox" depth=".01" scale="0.15 0.15 0.15" position="-0.41451 -1.01045 0.64868" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.2" videoplayer="" geometry="">
             <a-triangle id="vidplayicon" color="violet" depth=".01" scale="" rotation="0 0 -90" position="0.1 -0.02 0.06" shader="flat" width="2" height="2" vertex-a="0 .3 0" material="" geometry="">
             </a-triangle>
            
-           </a-sphere>
+           </a-circle>
 
        
             <a-plane id="vidpausebox" scale="0.16 0.15 0.1" position="1.03561 -0.90903 0.06649" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.3" videopause="" geometry="" rotation="0 -0.16 0">
@@ -85,7 +85,7 @@
          </a-plane>
          
       
-      </a-sphere>
+      </a-circle>
        
     <a-circle id="homebutton" color= "white" position="-36.48278 52.93519 29.7526" rotation="35 119.99999999999999 29.999999999999996" backhome="" material="alphaTest:0.66" geometry="primitive:torusKnot;radiusTubular:0.7;radius:4.33;segmentsTubular:58" scale="0.51 0.4 0.17" width: 4; align:"center"></a-circle>  
        
