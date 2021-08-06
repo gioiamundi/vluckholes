@@ -5,7 +5,7 @@ AFRAME.registerComponent('backhome', {
       let homeworldelements = document.querySelectorAll(".homeworld");
       let sky = document.querySelector("#sky");
       let videosphere = document.querySelector("#videosphereentity");
-     
+      
       
       let gobackhome = () => {
       sky.setAttribute("src", "#infinitociudad");
