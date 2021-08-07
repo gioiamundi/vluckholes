@@ -23,7 +23,7 @@
         
          <img id="infinitociudad" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLovepik_com-500376974-the-city-night-view-high-building-in-shanghai.jpg?v=1627765323381">
          <img id="beach" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fkris-guico-rsB-he-ye7w-unsplash.jpg?v=1627939350700">
-         <video id="videoclip" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Foutside%20posts%20video_1.mp4?v=1628280708403" crossorigin="anonymous"></video>
+         <video id="videoclip" autoplay loop="true" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Fousideaudiocompleto_1.mp4?v=1628340236482" crossorigin="anonymous"></video>
          <a-asset-item id="tokyomodel" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2FLITTLE%20TOKYO.glb?v=1627652868450"
          response-type="arraybuffer"></a-asset-item>
          <a-asset-item id="islaflotante" src="https://cdn.glitch.com/e9571f99-510c-481d-8de3-05c45b438c60%2Ftreasure%20island.glb?v=1627945964967"
@@ -59,13 +59,13 @@
         </a-entity>
       
         
-      <a-circle src="#videoclip" transparent="true" opacity="0.2" position="-5 3.90363 3.8805" rotation="29.999999999999996 115 -0.63" scale="1.5 1.5 1.5" material="" geometry="" visible="">
+      <a-torus-knot src="#videoclip" transparent="true" opacity="0.2" position="-5 3.90363 3.8805" rotation="29.999999999999996 115 -0.63" scale="1.5 1.5 1.5" material="" geometry="" visible="">
          
          <a-circle id="vidplaybox" depth=".01" scale="0.15 0.15 0.15" position="-0.90807 -0.72399 0.46852" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.2" videoplayer="" geometry="">
             <a-triangle id="vidplayicon" color="violet" depth=".01" scale="" rotation="0 0 -90" position="0.1 -0.02 0.06" shader="flat" width="2" height="2" vertex-a="0 .3 0" material="" geometry="">
             </a-triangle>
            
-           </a-circle>
+           </a-torus-knot
 
        
             <a-plane id="vidpausebox" scale="0.16 0.15 0.1" position="0.99477 -0.82861 0.04236" shader="flat" width="2" height="2" material="color:#191817" transparent="true" opacity="0.3" videopause="" geometry="" rotation="0 -0.16 0">
